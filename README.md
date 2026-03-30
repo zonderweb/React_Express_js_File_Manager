@@ -11,7 +11,12 @@ react_express_file_m/
 │   ├── routes/        # API routes
 │   ├── files/         # Managed files directory
 │   └── package.json
-└── frontend/          # React application (coming soon)
+└── frontend/          # React application (Vite)
+    ├── src/
+    │   ├── App.jsx    # Main React component
+    │   └── main.jsx   # Entry point
+    ├── index.html
+    └── package.json
 ```
 
 ## Backend
@@ -38,15 +43,18 @@ The server runs on port `8000`.
 **GET `/`** - Browse files and folders
 
 Query Parameters:
+
 - `path` (optional) - Relative path from `files/` directory
 
 Example:
+
 ```bash
 curl http://localhost:8000/
 curl http://localhost:8000/?path=api
 ```
 
 Response:
+
 ```json
 {
   "path": "api",
@@ -61,10 +69,47 @@ Response:
 }
 ```
 
+### CORS
+
+The backend includes CORS middleware to allow cross-origin requests from the frontend during development.
+
+## Frontend
+
+### Installation
+
+```bash
+cd frontend
+npm install
+```
+
+### Usage
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The frontend runs on `http://localhost:5173` and connects to the backend API at `http://localhost:8000`.
+
+## Running Both Servers
+
+Open two terminals:
+
+```bash
+# Terminal 1 - Backend
+cd backend
+node server.js
+
+# Terminal 2 - Frontend
+cd frontend
+npm run dev
+```
+
 ## Technologies
 
 - **Backend:** Node.js, Express.js v5
-- **Frontend:** React (planned)
+- **Frontend:** React 18, Vite
 
 ## License
 

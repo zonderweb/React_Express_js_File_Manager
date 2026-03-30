@@ -1,0 +1,1 @@
+In a RGB color space, hex #070707 is composed of 2.7% red, 2.7% green and 2.7% blue. Whereas in a CMYK color space, it is composed of 0% cyan, 0% magenta, 0% yellow and 97.3% black. It has a hue angle of 0 degrees, a saturation of 0% and a lightness of 2.7%. #070707 color hex could be obtained by blending #0e0e0e with #000000. Closest websafe color is: #000000.

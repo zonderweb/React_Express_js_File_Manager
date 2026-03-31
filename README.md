@@ -82,6 +82,23 @@ cd frontend
 npm install
 ```
 
+### FontAwesome Icons
+
+FontAwesome is connected via CDN in `index.html`:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+```
+
+Usage in components:
+
+```html
+<i className="fa-solid fa-folder"></i> <i className="fa-solid fa-file"></i>
+```
+
 ### Usage
 
 Start the development server:
@@ -109,7 +126,7 @@ npm run dev
 ## Technologies
 
 - **Backend:** Node.js, Express.js v5
-- **Frontend:** React 18, Vite
+- **Frontend:** React 18, Vite, FontAwesome
 
 ## License
 

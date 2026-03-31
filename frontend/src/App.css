@@ -167,7 +167,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
@@ -181,4 +181,53 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.file-manager {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+ul.folder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.folder-list > li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+ul.folder-list > li > i,
+ul.folder-list > li > a > i {
+  margin-right: 10px;
+}
+
+li.file > i {
+  color: var(--accent);
+}
+
+li.folder > a > i {
+  color: #84fcc0;
+}
+
+li.folder > a {
+  color: #9ca3af;
+}
+
+li.folder > a:hover {
+  color: #84fcc0;
+}
+
+.current-level {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--mono);
+  font-size: 16px;
+}
+.current-level span {
+  color: #fcc084;
+  font-weight: 550;
 }
